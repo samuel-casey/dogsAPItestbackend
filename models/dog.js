@@ -1,17 +1,17 @@
-const { Schema, model } = require("mongoose");
+const { Schema, model } = require('mongoose');
 
 //DOG SCHEMA
 const dogSchema = new Schema(
-  {
-    name: String,
-    age: Number,
-    img: String,
-  },
-  { timestamps: true }
+	{
+		name: String,
+		age: Number,
+		img: String,
+	},
+	{ timestamps: true }
 );
 
 //DOG MODEL
-const Dog = model("dog", dogSchema);
+const Dog = model('Dog', dogSchema);
 
 //EXPORT MODEL
 module.exports = Dog;
